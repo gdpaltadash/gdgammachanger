@@ -1,0 +1,61 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081"
+	},
+	"id": "tuusuario.color-tweaks",
+	"name": "Color Tweaks",
+	"version": "v1.0.0",
+	"developer": "TuUsuario",
+	"description": "Ajusta gamma, saturacion y contraste del juego por dentro",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Activado",
+			"description": "Activa o desactiva el filtro de color.",
+			"default": true
+		},
+		"gamma": {
+			"type": "float",
+			"name": "Gamma",
+			"description": "1.0 = sin cambio. Mayor = mas claro en los tonos medios, menor = mas oscuro.",
+			"default": 1.0,
+			"min": 0.2,
+			"max": 3.0,
+			"control": {
+				"slider": true,
+				"slider-step": 0.01,
+				"arrows": false,
+				"input": true
+			}
+		},
+		"saturation": {
+			"type": "float",
+			"name": "Saturacion",
+			"description": "Intensidad de los colores. 0 = blanco y negro, 1.0 = sin cambio.",
+			"default": 1.0,
+			"min": 0.0,
+			"max": 3.0,
+			"control": {
+				"slider": true,
+				"slider-step": 0.01,
+				"arrows": false,
+				"input": true
+			}
+		},
+		"contrast": {
+			"type": "float",
+			"name": "Contraste",
+			"description": "1.0 = sin cambio. Mayor = mas contraste.",
+			"default": 1.0,
+			"min": 0.0,
+			"max": 3.0,
+			"control": {
+				"slider": true,
+				"slider-step": 0.01,
+				"arrows": false,
+				"input": true
+			}
+		}
+	}
+}
